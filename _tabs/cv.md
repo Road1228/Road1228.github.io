@@ -7,7 +7,7 @@ title: 简历 / CV
 
 ## 简历 / Curriculum Vitae
 
-> 此页面提供在线简历概览，完整 PDF 版本可在此下载：[CV.pdf](/assets/pdf/cv.pdf)
+> 此页面提供在线简历概览。<!-- 完整 PDF 版本请放置 cv.pdf 到 /assets/pdf/ 目录后取消注释：[CV.pdf](/assets/pdf/cv.pdf) -->
 
 ---
 
