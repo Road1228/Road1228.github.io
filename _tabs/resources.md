@@ -1,6 +1,6 @@
 ---
 icon: fas fa-book-open
-order: 7
+order: 3
 layout: page
 title: Resources
 ---
