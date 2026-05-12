@@ -6,7 +6,7 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingues.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: zh
+lang: en
 
 # Change to your timezone › https://zones.arilyn.cc
 timezone: Asia/Shanghai
@@ -16,10 +16,9 @@ timezone: Asia/Shanghai
 
 title: Road's Academic Page # the main title
 
-tagline: 学术笔记与研究记录 # it will display as the subtitle
+tagline: Academic Notes & Research # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  Road1228 的个人学术网站，记录学习笔记、研究成果与学术资源。
   A personal academic website for sharing research notes, publications, and learning resources.
 
 # Fill in the protocol & hostname for your site.

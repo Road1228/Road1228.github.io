@@ -1,51 +1,51 @@
 ---
-title: Markdown 写作指南
+title: Markdown Writing Guide
 author: Road
 date: 2026-05-11 14:00:00 +0800
-categories: [教程, Markdown]
-tags: [markdown, 写作, 教程]
+categories: [Tutorial, Markdown]
+tags: [markdown, writing, tutorial]
 pin: true
 math: true
 mermaid: true
 image:
   path: https://picsum.photos/seed/markdown-guide/1200/630
-  alt: Markdown 写作指南
+  alt: Markdown Writing Guide
 ---
 
-## 简介
+## Introduction
 
-Markdown 是一种轻量级标记语言，广泛用于技术写作、博客发布和学术笔记。本文将介绍本站支持的 Markdown 常用功能。
-
----
-
-## 基本语法
-
-### 文本格式
-
-- **加粗文本** 使用双星号
-- *斜体文本* 使用单星号
-- ~~删除线~~ 使用双波浪线
-- `行内代码` 使用反引号
-
-### 链接与图片
-
-[访问 GitHub](https://github.com/Road1228)
-
-![示例图片](https://picsum.photos/seed/example/800/400){: width="800" height="400" }
-_图片说明文字_
+Markdown is a lightweight markup language widely used for technical writing, blogging, and academic notes. This post introduces the common Markdown features supported by this site.
 
 ---
 
-## 代码高亮
+## Basic Syntax
 
-支持多种编程语言的语法高亮：
+### Text Formatting
+
+- **Bold text** using double asterisks
+- *Italic text* using single asterisks
+- ~~Strikethrough~~ using double tildes
+- `Inline code` using backticks
+
+### Links & Images
+
+[Visit GitHub](https://github.com/Road1228)
+
+![Example Image](https://picsum.photos/seed/example/800/400){: width="800" height="400" }
+_Image caption_
+
+---
+
+## Code Highlighting
+
+Syntax highlighting for multiple programming languages is supported:
 
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
 
 def hello_world():
-    """一个简单的示例函数"""
+    """A simple example function"""
     x = np.linspace(0, 2 * np.pi, 100)
     y = np.sin(x)
     plt.plot(x, y)
@@ -57,7 +57,7 @@ if __name__ == "__main__":
 ```
 
 ```bash
-# 终端命令示例
+# Terminal command examples
 echo "Hello, World!"
 git status
 bundle exec jekyll serve
@@ -65,17 +65,17 @@ bundle exec jekyll serve
 
 ---
 
-## 数学公式
+## Math Formulas
 
-行内公式：$E = mc^2$
+Inline formula: $E = mc^2$
 
-块级公式：
+Block formula:
 
 $$
 \mathcal{L}(\theta) = -\frac{1}{N} \sum_{i=1}^{N} \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right]
 $$
 
-贝叶斯定理：
+Bayes' theorem:
 
 $$
 P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
@@ -83,50 +83,50 @@ $$
 
 ---
 
-## 表格
+## Tables
 
-| 特性 | 支持情况 | 说明 |
-|:-----|:--------:|-----:|
-| 代码高亮 | 是 | 支持多种语言 |
-| 数学公式 | 是 | 使用 MathJax |
-| Mermaid 图表 | 是 | 流程图等 |
-| 图片 | 是 | 本地或远程 |
+| Feature | Supported | Notes |
+|:--------|:---------:|------:|
+| Code Highlighting | Yes | Multiple languages |
+| Math Formulas | Yes | MathJax |
+| Mermaid Diagrams | Yes | Flowcharts, etc. |
+| Images | Yes | Local or remote |
 
 ---
 
-## Mermaid 流程图
+## Mermaid Flowchart
 
 ```mermaid
 graph TD
-    A[开始研究] --> B{文献综述}
-    B --> C[确定研究方向]
-    C --> D[设计实验]
-    D --> E[收集数据]
-    E --> F[分析结果]
-    F --> G{结论有效?}
-    G -->|是| H[撰写论文]
-    G -->|否| D
-    H --> I[投稿发表]
+    A[Start Research] --> B{Literature Review}
+    B --> C[Define Research Direction]
+    C --> D[Design Experiment]
+    D --> E[Collect Data]
+    E --> F[Analyze Results]
+    F --> G{Valid Conclusion?}
+    G -->|Yes| H[Write Paper]
+    G -->|No| D
+    H --> I[Submit & Publish]
 ```
 
 ---
 
-## 提示框
+## Prompt Boxes
 
-> 这是默认引用块
+> This is a default blockquote
 {: .prompt-info }
 
-> 这是一个提示
+> This is a tip
 {: .prompt-tip }
 
-> 注意事项
+> Warning note
 {: .prompt-warning }
 
-> 危险操作
+> Danger action
 {: .prompt-danger }
 
 ---
 
-## 总结
+## Summary
 
-本站基于 Jekyll + Chirpy 主题，支持丰富的 Markdown 扩展功能，非常适合学术笔记和技术写作。
+This site is built with Jekyll + Chirpy theme, supporting rich Markdown extensions, ideal for academic notes and technical writing.
