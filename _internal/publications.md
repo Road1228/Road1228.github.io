@@ -1,8 +1,7 @@
 ---
-icon: fas fa-file-alt
-order: 5
-layout: page
 title: Publications
+author: Road
+tags: [publications, papers]
 ---
 
 ## Journal Articles
