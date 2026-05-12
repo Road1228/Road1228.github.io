@@ -14,12 +14,12 @@ timezone: Asia/Shanghai
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Road's Academic Page # the main title
+title: Road's Log # the main title
 
-tagline: Academic Notes & Research # it will display as the subtitle
+tagline: Notes & Research # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  A personal academic website for sharing research notes, publications, and learning resources.
+  A personal website for sharing research notes and learning resources.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
