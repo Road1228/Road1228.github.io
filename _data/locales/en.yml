@@ -4,14 +4,14 @@
 
 layout:
   post: Post
-  category: Category
+  category: Note
   tag: Tag
 
 # The tabs of sidebar
 tabs:
   # format:  <filename_without_extension> : <value>
   home: Home
-  categories: Categories
+  categories: Notes
   tags: Tags
   archives: Archives
   about: About
@@ -78,5 +78,5 @@ post:
 
 # categories page
 categories:
-  category_measure: categories
+  category_measure: notes
   post_measure: posts
