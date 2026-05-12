@@ -1,44 +1,66 @@
 ---
-title: Internal Resources Guide
+title: Internal Pages Guide
 author: Road
-tags: [internal, guide]
+tags: [guide, internal]
 ---
 
-## About This Section
+## About Internal Pages
 
-This page belongs to the **internal** section. Pages here are **not listed on the homepage**, but can be shared via direct links.
+Internal pages are **not listed on the homepage** but accessible via direct links. They are organized into three sections:
 
-This is useful for:
-- Internal team resources
-- Private tutorials and guides
-- Work-in-progress drafts
-- Any content you want to share selectively
+| Directory | Purpose | URL Pattern |
+|-----------|---------|-------------|
+| `_guides/` | Tutorials & how-to guides | `/posts/internal/guides/<title>/` |
+| `_profile/` | Personal info (CV, publications) | `/posts/internal/profile/<title>/` |
+| `_thoughts/` | Personal reflections | `/posts/internal/thoughts/<title>/` |
 
 ---
 
-## How to Add Internal Pages
+## How to Add a New Page
 
-1. Create a `.md` file in the `_internal/` directory
-2. Add front matter with at least `title`
-3. Push to GitHub — the page will be accessible at `/posts/internal/<title>/`
+### 1. Create a Markdown file in the right directory
 
-### Example
+```bash
+# A tutorial
+code _guides/my-tutorial.md
 
-Create `_internal/my-guide.md`:
+# A personal page
+code _profile/my-info.md
 
-```markdown
----
-title: My Guide
-author: Road
-tags: [guide]
----
-
-## Content here
-This page won't appear on the homepage.
+# A reflection
+code _thoughts/my-reflection.md
 ```
 
-Access it at: `https://road1228.github.io/posts/internal/my-guide/`
+### 2. Add front matter
+
+```yaml
+---
+title: My Page Title
+author: Road
+tags: [tag1, tag2]
+---
+
+Content here...
+```
+
+### 3. Push to GitHub
+
+```bash
+git add _guides/my-tutorial.md
+git commit -m "Add guide: My Tutorial"
+git push origin main
+```
+
+### 4. Share the link
+
+The page will be accessible at the corresponding URL pattern.
 
 ---
 
-> This is a placeholder page. Replace or remove it when you add your own internal content.
+## Examples
+
+| File | URL |
+|------|-----|
+| `_guides/setup-env.md` | `/posts/internal/guides/setup-env/` |
+| `_profile/cv.md` | `/posts/internal/profile/cv/` |
+| `_thoughts/2026-review.md` | `/posts/internal/thoughts/2026-review/` |
