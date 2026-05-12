@@ -1,8 +1,6 @@
 ---
 icon: fas fa-book-open
 order: 3
-layout: page
-title: Resources
 ---
 
 ## Learning Resources
