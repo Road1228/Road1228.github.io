@@ -7,22 +7,10 @@ order: 5
 
 > A learner and researcher passionate about knowledge.
 
----
-
-### Education
-
-| Period | University | Major | Degree |
-|--------|-----------|-------|--------|
-| 20XX – Present | XX University | XX Major | Ph.D. |
-| 20XX – 20XX | XX University | XX Major | M.S. |
-| 20XX – 20XX | XX University | XX Major | B.S. |
-
----
-
 ### Research Interests
 
 - **Machine Learning & Deep Learning**
-
+- **Plasma feedforward design**
 ---
 
 ### Contact
@@ -30,7 +18,7 @@ order: 5
 - **GitHub**: [Jingjing Lu](https://github.com/Road1228)
 - **Email**: jingjing.lu@ipp.ac.cn
 - **Google Scholar**: [Profile](https://scholar.google.com)
-- **ORCID**: [0000-0000-0000-0000](https://orcid.org)
+- **ORCID**: [0009-0009-2629-5744](https://orcid.org)
 
 ---
 

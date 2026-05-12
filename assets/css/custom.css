@@ -1,0 +1,22 @@
+/* Custom color scheme - Cream White (日系简约) */
+
+:root {
+  /* Framework color */
+  --main-bg: #fefcf8;
+  --main-border-color: #efe9e1;
+
+  /* Sidebar */
+  --sidebar-bg: #f8f4ee;
+  --sidebar-border-color: #efe9e1;
+
+  /* Topbar */
+  --topbar-bg: rgb(254 252 248 / 85%);
+}
+
+[data-theme="dark"] {
+  --main-bg: #1a1a1e;
+  --main-border-color: #2d2d2d;
+  --sidebar-bg: #1e1e22;
+  --sidebar-border-color: #2d2d2d;
+  --topbar-bg: rgb(26 26 30 / 85%);
+}
