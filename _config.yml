@@ -171,9 +171,15 @@ collections:
   tabs:
     output: true
     sort_by: order
-  internal:
+  guides:
     output: true
-    permalink: /posts/internal/:title/
+    permalink: /posts/internal/guides/:title/
+  profile:
+    output: true
+    permalink: /posts/internal/profile/:title/
+  thoughts:
+    output: true
+    permalink: /posts/internal/thoughts/:title/
 
 defaults:
   - scope:
@@ -198,7 +204,19 @@ defaults:
       permalink: /:title/
   - scope:
       path: ""
-      type: internal
+      type: guides
+    values:
+      layout: page
+      toc: true
+  - scope:
+      path: ""
+      type: profile
+    values:
+      layout: page
+      toc: true
+  - scope:
+      path: ""
+      type: thoughts
     values:
       layout: page
       toc: true

@@ -22,16 +22,13 @@ order: 5
 ### Research Interests
 
 - **Machine Learning & Deep Learning**
-- **Natural Language Processing**
-- **Computer Vision**
-- **Other Directions**
 
 ---
 
 ### Contact
 
-- **GitHub**: [Road1228](https://github.com/Road1228)
-- **Email**: your.email@example.com
+- **GitHub**: [Jingjing Lu](https://github.com/Road1228)
+- **Email**: jingjing.lu@ipp.ac.cn
 - **Google Scholar**: [Profile](https://scholar.google.com)
 - **ORCID**: [0000-0000-0000-0000](https://orcid.org)
 
