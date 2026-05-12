@@ -1,8 +1,7 @@
 ---
-icon: fas fa-address-card
-order: 6
-layout: page
 title: CV
+author: Road
+tags: [cv, resume]
 ---
 
 ## Curriculum Vitae
