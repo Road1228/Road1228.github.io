@@ -20,3 +20,285 @@
   --sidebar-border-color: #2d2d2d;
   --topbar-bg: rgb(26 26 30 / 85%);
 }
+
+/* ------------------------------------------------------------------
+   CV pages (_profile/cv.md, _profile/cv-zh.md)
+   Single column, dates flush right, thin ruled section headings.
+   Colours follow the theme variables, so light and dark mode both work.
+   ------------------------------------------------------------------ */
+
+.cv {
+  --cv-accent: #193b50;
+  --cv-rule: #c9d6de;
+  --cv-tag-bg: #eaf0f3;
+
+  max-width: 50rem;
+  line-height: 1.6;
+}
+
+html[data-mode='dark'] .cv {
+  --cv-accent: #9cc4dc;
+  --cv-rule: #3a4750;
+  --cv-tag-bg: #26323a;
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-mode]) .cv {
+    --cv-accent: #9cc4dc;
+    --cv-rule: #3a4750;
+    --cv-tag-bg: #26323a;
+  }
+}
+
+/* The name block replaces the generic page title. */
+article:has(.cv) > h1.dynamic-title {
+  display: none;
+}
+
+.cv-head {
+  margin: 0.5rem 0 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--cv-rule);
+}
+
+.cv-head p {
+  margin: 0;
+}
+
+.cv .cv-name {
+  font-family: Lato, 'Microsoft Yahei', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--cv-accent);
+}
+
+.cv .cv-name-alt {
+  margin-left: 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: var(--text-muted-color);
+}
+
+.cv .cv-tagline {
+  margin-top: 0.35rem;
+  font-size: 1.05rem;
+  color: var(--cv-accent);
+}
+
+.cv .cv-links {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: var(--text-muted-color);
+}
+
+.cv .cv-sep {
+  margin: 0 0.35rem;
+  color: var(--cv-rule);
+}
+
+.cv .cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.cv a.cv-btn {
+  display: inline-block;
+  padding: 0.3rem 0.95rem;
+  border: 1px solid var(--cv-accent);
+  border-radius: 0.35rem;
+  background: var(--cv-accent);
+  color: var(--main-bg);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cv a.cv-btn.cv-btn-ghost {
+  background: transparent;
+  color: var(--cv-accent);
+}
+
+.cv a.cv-btn:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+/* Section headings: accent colour with a thin rule. */
+.cv h2 {
+  margin: 2.25rem 0 0.9rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--cv-rule);
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--cv-accent);
+}
+
+.cv.cv-zh h2 {
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+}
+
+.cv h3 {
+  margin: 1.4rem 0 0.25rem;
+  font-size: 1.05rem;
+  color: var(--heading-color);
+}
+
+.cv ul {
+  margin-bottom: 0.5rem;
+  padding-left: 1.2rem;
+}
+
+.cv ul li {
+  margin-bottom: 0.2rem;
+}
+
+/* Entry: left text, right date; wraps on narrow screens. */
+.cv-entry {
+  margin-bottom: 0.9rem;
+}
+
+.cv-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  column-gap: 1.25rem;
+}
+
+/* Long left-hand text wraps inside its own column; the date stays on the
+   first line at the right edge. */
+.cv-row > :first-child {
+  flex: 1 1 0;
+  min-width: 12rem;
+}
+
+.cv-org {
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.cv-date {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted-color);
+}
+
+.cv-note {
+  font-weight: 700;
+  color: var(--cv-accent);
+}
+
+.cv-sub {
+  font-size: 0.92rem;
+  color: var(--text-muted-color);
+}
+
+.cv .cv-meta {
+  margin: 0 0 0.5rem;
+  font-size: 0.92rem;
+  color: var(--text-muted-color);
+}
+
+.cv-tag {
+  display: inline-block;
+  margin-right: 0.4rem;
+  padding: 0.05rem 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--cv-tag-bg);
+  color: var(--cv-accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Skills: label column + content. */
+.cv-skill {
+  display: grid;
+  grid-template-columns: 10.5rem 1fr;
+  column-gap: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.cv.cv-zh .cv-skill {
+  grid-template-columns: 6.5rem 1fr;
+}
+
+.cv-skill-label {
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+/* Publications: title / authors / venue on separate lines. */
+.cv .cv-group {
+  margin: 1.1rem 0 0.5rem;
+  font-weight: 700;
+  color: var(--text-muted-color);
+}
+
+.cv ol.cv-pubs {
+  margin: 0 0 0.5rem;
+  padding-left: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+.cv ol.cv-pubs > li {
+  position: relative;
+  margin-bottom: 0.95rem;
+  padding-left: 1rem;
+  border-left: 2px solid var(--cv-rule);
+}
+
+.cv-pub-title,
+.cv-pub-authors,
+.cv-pub-venue {
+  display: block;
+}
+
+.cv-pub-title {
+  font-weight: 700;
+  color: var(--heading-color);
+}
+
+.cv-pub-authors strong {
+  color: var(--heading-color);
+}
+
+.cv-pub-venue {
+  font-size: 0.94rem;
+  color: var(--text-muted-color);
+}
+
+.cv a.cv-pub-link {
+  margin-left: 0.25rem;
+  white-space: nowrap;
+}
+
+.cv .cv-updated {
+  margin-top: 2.5rem;
+  font-size: 0.85rem;
+  color: var(--text-muted-color);
+}
+
+@media (max-width: 576px) {
+  .cv .cv-name {
+    font-size: 1.7rem;
+  }
+
+  .cv-skill,
+  .cv.cv-zh .cv-skill {
+    grid-template-columns: 1fr;
+  }
+
+  .cv a.cv-pub-link {
+    white-space: normal;
+    word-break: break-all;
+  }
+}
